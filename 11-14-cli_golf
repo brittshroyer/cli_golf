@@ -1,0 +1,164 @@
+Last login: Mon Nov 14 17:07:26 on ttys000
+nvm is not compatible with the npm config "prefix" option: currently set to "/Users/brittShroyer/.nvm/versions/node/v7.1.0"
+Run `nvm use --delete-prefix v7.1.0 --silent` to unset it.
+brittshroyer ~
+$ cd Desktop
+brittshroyer ~/Desktop
+$ cd homework -ls
+brittshroyer ~/Desktop/homework
+$ pwd
+/Users/brittshroyer/Desktop/homework
+brittshroyer ~/Desktop/homework
+$ ls
+cli_golf-master/
+brittshroyer ~/Desktop/homework
+$ cd cli_golf-master
+brittshroyer ~/Desktop/homework/cli_golf-master
+$ ls
+LICENSE.txt*  README.md*  kitchen/  kitchen.zip*
+brittshroyer ~/Desktop/homework/cli_golf-master
+$ cd kitchen
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen
+$ pwd
+/Users/brittshroyer/Desktop/homework/cli_golf-master/kitchen
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen
+$ mv cants.txt apples.txt pantry/crisper-drawer
+gmv: cannot stat 'cants.txt': No such file or directory
+gmv: cannot stat 'apples.txt': No such file or directory
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen
+$ mv cans.txt pantry/crisper-drawer/apples.txt
+'cans.txt' -> 'pantry/crisper-drawer/apples.txt'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen
+$ cd pantry;mv crisper-drawer ../fridge
+'crisper-drawer' -> '../fridge/crisper-drawer'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/pantry
+$ cd ../fridge/trashcan/sink; mv delete-me.txt drying-rack/
+'delete-me.txt' -> 'drying-rack/'
+gmv: cannot move 'delete-me.txt' to 'drying-rack/': No such file or directory
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/trashcan/sink
+$ cd ../fridge/trashcan/sink; rm delete-me.txt
+-bash: cd: ../fridge/trashcan/sink: No such file or directory
+removed 'delete-me.txt'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/trashcan/sink
+$ mkdir drying-rack/
+gmkdir: created directory 'drying-rack/'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/trashcan/sink
+$ rmdir drying-rack/
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/trashcan/sink
+$ mkdir drying-rack
+gmkdir: created directory 'drying-rack'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/trashcan/sink
+$ mv clean-dishes.txt drying-rack
+'clean-dishes.txt' -> 'drying-rack/clean-dishes.txt'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/trashcan/sink
+$ cd ../;mv sink../../
+gmv: missing destination file operand after 'sink../../'
+Try 'gmv --help' for more information.
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/trashcan
+$ mv sink ~/Desktop/homework/cli_golf-master/kitchen
+'sink' -> '/Users/brittshroyer/Desktop/homework/cli_golf-master/kitchen/sink'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/trashcan
+$ cd ../;mv trashcan ~/Desktop/homework/cli_golf-master/kitchen
+'trashcan' -> '/Users/brittshroyer/Desktop/homework/cli_golf-master/kitchen/trashcan'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge
+$ rm diapers.txt
+removed 'diapers.txt'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge
+$ cd freezer
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/freezer
+$ rm couch.txt
+removed 'couch.txt'
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/freezer
+$ tree
+.
+├── frozenpeas.txt
+└── icecream.txt
+
+0 directories, 2 files
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen/fridge/freezer
+$ cd ../../..
+brittshroyer ~/Desktop/homework/cli_golf-master
+$ tree
+.
+├── LICENSE.txt
+├── README.md
+├── kitchen
+│   ├── fridge
+│   │   ├── crisper-drawer
+│   │   │   ├── apples.txt
+│   │   │   └── lettuce.txt
+│   │   ├── freezer
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   └── milk.txt
+│   ├── pantry
+│   │   ├── cans.txt
+│   │   └── cereal.txt
+│   ├── sink
+│   │   ├── dirty-dishes.txt
+│   │   └── drying-rack
+│   │       └── clean-dishes.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+└── kitchen.zip
+
+8 directories, 15 files
+brittshroyer ~/Desktop/homework/cli_golf-master
+$ cd kitchen
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+brittshroyer ~/Desktop/homework/cli_golf-master/kitchen
+$ 
